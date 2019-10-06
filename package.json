@@ -1,0 +1,23 @@
+{
+  "name": "express-arango-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "npm run server",
+    "docker:build": "docker build -t sumitgovil/express-arango-setup .",
+    "docker:run": "docker run -p 4000:4000 -d sumitgovil/express-arango-setup"
+  },
+  "author": "Sumit Govil",
+  "license": "MIT",
+  "dependencies": {
+    "arangojs": "^6.11.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "nodemon": "^1.19.3"
+  }
+}
